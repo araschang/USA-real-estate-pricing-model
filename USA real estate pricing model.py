@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-real_estate = pd.read_csv("/Users/araschang/Desktop/coding/PycharmProjects/learning/machine learning/realtor-data.csv")
+real_estate = pd.read_csv("/Users/araschang/Desktop/coding/USA real estate pricing model/realtor-data.csv")
 print(real_estate.head())
 for i in range(real_estate.shape[0]):
     if real_estate["pricepersize"][i] == '#DIV/0!':
